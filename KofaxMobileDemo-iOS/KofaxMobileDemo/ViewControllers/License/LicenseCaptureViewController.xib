@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LicenseCaptureViewController">
+            <connections>
+                <outlet property="bottomOverlay" destination="xzK-hn-C4z" id="goK-xs-QcX"/>
+                <outlet property="view" destination="V52-hV-h6q" id="WFC-5F-4B0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="V52-hV-h6q">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzK-hn-C4z">
+                    <rect key="frame" x="0.0" y="498" width="320" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elf-fS-mcV">
+                            <rect key="frame" x="2" y="5" width="60" height="60"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="16"/>
+                            <state key="normal" image="close.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCancelTouchUpInside:" destination="-1" eventType="touchUpInside" id="SCA-A5-Jcr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="XVt-tl-jmB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="xzK-hn-C4z" firstAttribute="leading" secondItem="V52-hV-h6q" secondAttribute="leading" id="FWw-w0-A8b"/>
+                <constraint firstAttribute="bottom" secondItem="xzK-hn-C4z" secondAttribute="bottom" id="MKk-AW-qlG"/>
+                <constraint firstAttribute="trailing" secondItem="xzK-hn-C4z" secondAttribute="trailing" id="gAz-ct-HLM"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close.png" width="120" height="120"/>
+    </resources>
+</document>

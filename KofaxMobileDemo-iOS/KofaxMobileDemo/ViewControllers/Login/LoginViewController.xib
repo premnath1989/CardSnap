@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="backGroundImage" destination="ccy-UO-tGH" id="oh7-Rk-vUP"/>
+                <outlet property="background1" destination="98o-JZ-e7c" id="Dk4-sa-xa6"/>
+                <outlet property="background2" destination="UR9-fS-9aC" id="tex-CG-yAW"/>
+                <outlet property="backgroundTopConstraint" destination="3h6-6u-l2d" id="rdV-ZG-Lwp"/>
+                <outlet property="emailField" destination="xpX-r1-c3A" id="Vxf-Rz-R5O"/>
+                <outlet property="footerLabel" destination="3zT-5s-JNB" id="aXc-tW-FOj"/>
+                <outlet property="loginButton" destination="dmh-Di-YQo" id="GZU-aT-ecd"/>
+                <outlet property="loginView" destination="VGY-wR-S5I" id="z7E-uz-qxS"/>
+                <outlet property="logoImage" destination="xs9-un-KTD" id="rpv-Im-IAA"/>
+                <outlet property="passwordField" destination="UPu-CE-lND" id="1XT-md-yEa"/>
+                <outlet property="rememberButton" destination="aah-Ff-NQZ" id="6fW-14-FFr"/>
+                <outlet property="rememberMeLabel" destination="cnH-cK-Q4Q" id="zmj-9P-XlW"/>
+                <outlet property="usernameField" destination="oiR-Yx-YLr" id="j6S-3y-HAl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewLeftConstraint" destination="Kgn-Qt-nYE" id="R95-VD-WWG"/>
+                <outlet property="viewTopConstraint" destination="r89-hI-mTq" id="9EX-FD-NV2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login screen_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ccy-UO-tGH">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-wR-S5I">
+                    <rect key="frame" x="140" y="44" width="320" height="400"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kofax_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="xs9-un-KTD">
+                            <rect key="frame" x="60" y="57" width="201" height="67"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98o-JZ-e7c">
+                            <rect key="frame" x="30" y="145" width="260" height="70"/>
+                            <color key="backgroundColor" red="0.090196078430000007" green="0.30196078430000001" blue="0.43137254899999999" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="0.035294117647058823" green="0.2627450980392157" blue="0.41960784313725491" alpha="0.76000000000000001" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR9-fS-9aC">
+                            <rect key="frame" x="30" y="233" width="260" height="36"/>
+                            <color key="backgroundColor" red="0.035294117649999998" green="0.26274509800000001" blue="0.41960784309999999" alpha="0.76000000000000001" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZHZ-gd-qhC">
+                            <rect key="frame" x="42" y="152" width="22" height="22"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lock.png" translatesAutoresizingMaskIntoConstraints="NO" id="efe-Vc-xHz">
+                            <rect key="frame" x="42" y="185" width="22" height="22"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnH-cK-Q4Q">
+                            <rect key="frame" x="72" y="281" width="165" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmh-Di-YQo">
+                            <rect key="frame" x="30" y="318" width="260" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                            <color key="tintColor" red="0.058823529411764705" green="0.41176470588235292" blue="0.72941176470588232" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Login">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginButtonAction:" destination="-1" eventType="touchUpInside" id="j2t-OM-yHe"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oiR-Yx-YLr">
+                            <rect key="frame" x="72" y="148" width="215" height="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="QDA-UP-puu"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UPu-CE-lND">
+                            <rect key="frame" x="72" y="182" width="215" height="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="mih-mo-GEh"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xpX-r1-c3A">
+                            <rect key="frame" x="72" y="236" width="215" height="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="AIf-cn-hZg"/>
+                            </connections>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ciu-Hx-Cny">
+                            <rect key="frame" x="42" y="240" width="22" height="22"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aah-Ff-NQZ">
+                            <rect key="frame" x="42" y="281" width="22" height="22"/>
+                            <state key="normal" image="check.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="rememberButtonAction:" destination="-1" eventType="touchUpInside" id="Lc5-6G-K4J"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmk-BG-udd">
+                            <rect key="frame" x="30" y="180" width="260" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="Vdt-cP-VYr"/>
+                        <constraint firstAttribute="width" constant="320" id="j1t-c9-7C7"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2015 Kofax Mobile Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zT-5s-JNB">
+                    <rect key="frame" x="0.0" y="554" width="600" height="20.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ccy-UO-tGH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3h6-6u-l2d"/>
+                <constraint firstAttribute="bottom" secondItem="3zT-5s-JNB" secondAttribute="bottom" constant="25.5" id="8gp-D7-GUQ"/>
+                <constraint firstItem="3zT-5s-JNB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Abq-QJ-YRu"/>
+                <constraint firstAttribute="trailing" secondItem="ccy-UO-tGH" secondAttribute="trailing" id="FDH-Vi-xmq"/>
+                <constraint firstItem="ccy-UO-tGH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GVm-dE-DxA"/>
+                <constraint firstItem="VGY-wR-S5I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="140" id="Kgn-Qt-nYE"/>
+                <constraint firstAttribute="bottom" secondItem="ccy-UO-tGH" secondAttribute="bottom" id="WG2-8S-xlF"/>
+                <constraint firstItem="VGY-wR-S5I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="r89-hI-mTq"/>
+                <constraint firstAttribute="trailing" secondItem="3zT-5s-JNB" secondAttribute="trailing" id="y6U-nl-kDx"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="check.png" width="22" height="22"/>
+        <image name="email.png" width="22" height="22"/>
+        <image name="kofax_logo.png" width="201" height="67"/>
+        <image name="lock.png" width="22" height="22"/>
+        <image name="login screen_bg.png" width="320" height="568"/>
+        <image name="user.png" width="22" height="22"/>
+    </resources>
+</document>

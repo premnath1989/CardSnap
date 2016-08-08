@@ -1,0 +1,14 @@
+  <?xml version="1.0" encoding="iso-8859-1"?>
+<Configuration name="VRS Image Classification">
+
+  <Section name="Vrs">
+    <Section name="ImageClassification">
+      <Parm name="OrientationDetection" type="int" value="4"/>
+      <Parm name="ReducedWidth" type="int" value="25"/>
+      <Parm name="ReducedHeight" type="int" value="25"/>
+      <Parm name="PositiveCost" type="float" value="10.0"/>
+      <Parm name="NegativeCost" type="float" value="10.0"/>
+      <Parm name="NumberOfSavedExamples" type="int" value="100"/>
+    </Section>
+  </Section>
+</Configuration>

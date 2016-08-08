@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppStatsViewController">
+            <connections>
+                <outlet property="table" destination="yMc-cm-YcE" id="tlU-mH-mq2"/>
+                <outlet property="tableTopConstraint" destination="vFe-f1-oaP" id="w3m-n5-OEV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="yMc-cm-YcE">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bVn-z6-meC"/>
+                        <outlet property="delegate" destination="-1" id="WF8-Ww-je7"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yMc-cm-YcE" secondAttribute="bottom" id="ocQ-F0-47b"/>
+                <constraint firstItem="yMc-cm-YcE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rI8-Hh-1dN"/>
+                <constraint firstAttribute="trailing" secondItem="yMc-cm-YcE" secondAttribute="trailing" id="uQ5-SD-E1e"/>
+                <constraint firstItem="yMc-cm-YcE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="vFe-f1-oaP"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

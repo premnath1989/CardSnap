@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CDSummaryViewController">
+            <connections>
+                <outlet property="imagesThumbnailCollectionView" destination="ePC-7h-NKf" id="udH-sE-bps"/>
+                <outlet property="tblSummary" destination="Zbh-6k-dF1" id="6qg-Qb-IS7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ePC-7h-NKf">
+                    <rect key="frame" x="0.0" y="64" width="320" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="X6w-Lm-QVJ"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2lK-aq-GiH">
+                        <size key="itemSize" width="51" height="51"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LSH-lV-OP4"/>
+                        <outlet property="delegate" destination="-1" id="82E-CE-dup"/>
+                    </connections>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zbh-6k-dF1">
+                    <rect key="frame" x="0.0" y="184" width="320" height="384"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="G82-cC-BTi"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ePC-7h-NKf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1wY-eD-15J"/>
+                <constraint firstAttribute="trailing" secondItem="ePC-7h-NKf" secondAttribute="trailing" id="HD6-sr-rA1"/>
+                <constraint firstItem="Zbh-6k-dF1" firstAttribute="top" secondItem="ePC-7h-NKf" secondAttribute="bottom" id="KPz-ev-cU3"/>
+                <constraint firstAttribute="bottom" secondItem="Zbh-6k-dF1" secondAttribute="bottom" id="Pts-lr-jdO"/>
+                <constraint firstItem="ePC-7h-NKf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Tia-Cw-KxX"/>
+                <constraint firstItem="Zbh-6k-dF1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e94-DM-KmV"/>
+                <constraint firstAttribute="trailing" secondItem="Zbh-6k-dF1" secondAttribute="trailing" id="wbq-o8-AKY"/>
+            </constraints>
+            <point key="canvasLocation" x="268" y="333"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LicensePromptViewController">
+            <connections>
+                <outlet property="btnCaptureQrCode" destination="bjc-4j-VKl" id="Qsb-ab-tkZ"/>
+                <outlet property="btnSubmit" destination="Trn-lQ-eWf" id="aeZ-YG-LEY"/>
+                <outlet property="lblEnterLicensePlaceHolder" destination="i1O-Sa-32i" id="CV6-xM-n5F"/>
+                <outlet property="lblOr" destination="PgJ-bw-eSB" id="wnN-30-Vxu"/>
+                <outlet property="tfLicense" destination="BfN-cH-BtY" id="Pny-MH-0iU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="custom login screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-gb-REU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1O-Sa-32i">
+                    <rect key="frame" x="18" y="80" width="231" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Gh5-Ft-PvY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.19215686274509805" green="0.19215686274509805" blue="0.19215686274509805" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BfN-cH-BtY">
+                    <rect key="frame" x="19" y="104" width="281" height="36"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Zev-jb-DWe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="wn3-zj-c8X"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trn-lQ-eWf">
+                    <rect key="frame" x="51" y="176" width="215" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.050980392156862744" green="0.3843137254901961" blue="0.70588235294117652" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="aNk-Vd-Yre"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" red="0.99607843139999996" green="1" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSubmitTouchUpInside:" destination="-1" eventType="touchUpInside" id="uOF-ls-s1u"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjc-4j-VKl">
+                    <rect key="frame" x="51" y="339" width="215" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.050980392159999999" green="0.38431372549999998" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Kot-tr-P3d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Scan License QR Code">
+                        <color key="titleColor" red="0.99607843139999996" green="1" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnCaptureTouchUpInside:" destination="-1" eventType="touchUpInside" id="rif-uz-Upr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgJ-bw-eSB">
+                    <rect key="frame" x="130" y="248" width="60" height="60"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="WYc-wM-sfg"/>
+                        <constraint firstAttribute="height" constant="60" id="yab-Zy-Beh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PgJ-bw-eSB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="248" id="15k-Ph-Jsq"/>
+                <constraint firstItem="i1O-Sa-32i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="3ba-Rx-ODA"/>
+                <constraint firstAttribute="trailing" secondItem="BfN-cH-BtY" secondAttribute="trailing" constant="20" id="3qs-ni-LGF"/>
+                <constraint firstItem="BfN-cH-BtY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="42b-ZY-IKE"/>
+                <constraint firstAttribute="bottom" secondItem="Ma7-gb-REU" secondAttribute="bottom" id="4SI-gn-xkx"/>
+                <constraint firstItem="bjc-4j-VKl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="9ir-iF-JWO"/>
+                <constraint firstAttribute="trailing" secondItem="Trn-lQ-eWf" secondAttribute="trailing" constant="54" id="Fay-4F-1pw"/>
+                <constraint firstItem="i1O-Sa-32i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="NBy-kU-s7u"/>
+                <constraint firstItem="PgJ-bw-eSB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NHT-uW-Ym5"/>
+                <constraint firstItem="BfN-cH-BtY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="VER-k5-6xd"/>
+                <constraint firstAttribute="trailing" secondItem="i1O-Sa-32i" secondAttribute="trailing" constant="71" id="cjN-oe-bv8"/>
+                <constraint firstItem="bjc-4j-VKl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="339" id="iJR-Bl-WWn"/>
+                <constraint firstAttribute="trailing" secondItem="Ma7-gb-REU" secondAttribute="trailing" id="iKH-HZ-yty"/>
+                <constraint firstItem="Ma7-gb-REU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="me3-MG-gGs"/>
+                <constraint firstItem="Trn-lQ-eWf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="orL-De-tRq"/>
+                <constraint firstItem="Trn-lQ-eWf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="176" id="sWV-cG-dEx"/>
+                <constraint firstItem="Ma7-gb-REU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="t8v-qy-s3t"/>
+                <constraint firstAttribute="trailing" secondItem="bjc-4j-VKl" secondAttribute="trailing" constant="54" id="w9w-bP-mj4"/>
+            </constraints>
+            <point key="canvasLocation" x="271" y="340"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="custom login screen.png" width="320" height="568"/>
+    </resources>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>keysArray</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Card Number</string>
+			<key>key</key>
+			<string>cardNumber</string>
+			<key>value</key>
+			<string></string>
+			<key>confidence</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Expiry Date</string>
+			<key>key</key>
+			<string>expiryDate</string>
+			<key>value</key>
+			<string></string>
+			<key>confidence</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CVV</string>
+			<key>key</key>
+			<string>cvv</string>
+			<key>value</key>
+			<string></string>
+			<key>confidence</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Amount</string>
+			<key>key</key>
+			<string>amount</string>
+			<key>value</key>
+			<string></string>
+			<key>confidence</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

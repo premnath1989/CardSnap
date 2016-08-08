@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BPSummaryViewController">
+            <connections>
+                <outlet property="doneButton" destination="Qs2-Xp-G3Z" id="4ZF-nY-Eye"/>
+                <outlet property="imagesThumbnailCollectionView" destination="XJQ-qe-av4" id="pAd-Vj-NgP"/>
+                <outlet property="keyboardToolbar" destination="k66-Ar-ojz" id="JCX-ef-KYD"/>
+                <outlet property="prevNextSegment" destination="b9R-Ae-VAL" id="gPo-0w-B8t"/>
+                <outlet property="table" destination="gnG-nP-uoB" id="6Ie-uI-dwE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gnG-nP-uoB">
+                    <rect key="frame" x="0.0" y="184" width="600" height="416"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fk4-w5-oHl"/>
+                        <outlet property="delegate" destination="-1" id="cwS-27-bNJ"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XJQ-qe-av4">
+                    <rect key="frame" x="0.0" y="64" width="600" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="qFM-o0-G3t"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6UH-qg-ZwB">
+                        <size key="itemSize" width="51" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XJQ-qe-av4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="3DO-rX-0SL"/>
+                <constraint firstItem="gnG-nP-uoB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hif-Zg-iAe"/>
+                <constraint firstItem="XJQ-qe-av4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MGp-0h-cIT"/>
+                <constraint firstAttribute="trailing" secondItem="gnG-nP-uoB" secondAttribute="trailing" id="MXR-CQ-Eb0"/>
+                <constraint firstAttribute="bottom" secondItem="gnG-nP-uoB" secondAttribute="bottom" id="aSl-Le-N9t"/>
+                <constraint firstAttribute="trailing" secondItem="XJQ-qe-av4" secondAttribute="trailing" id="sPa-Hq-N9p"/>
+                <constraint firstItem="gnG-nP-uoB" firstAttribute="top" secondItem="XJQ-qe-av4" secondAttribute="bottom" id="zt6-Jo-nFK"/>
+            </constraints>
+        </view>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="k66-Ar-ojz">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <items>
+                <barButtonItem style="plain" id="xXA-zi-h21">
+                    <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" id="b9R-Ae-VAL">
+                        <rect key="frame" x="20" y="7" width="123" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <segments>
+                            <segment title="Previous"/>
+                            <segment title="Next"/>
+                        </segments>
+                        <connections>
+                            <action selector="segmentControlAction:" destination="-1" eventType="valueChanged" id="7b3-ur-2ts"/>
+                        </connections>
+                    </segmentedControl>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="gNb-N7-iuR"/>
+                <barButtonItem title="Done" id="Qs2-Xp-G3Z">
+                    <connections>
+                        <action selector="doneButtonAction:" destination="-1" id="JKm-5X-tZt"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+        </toolbar>
+    </objects>
+</document>

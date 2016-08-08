@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditCardManualEntryViewController">
+            <connections>
+                <outlet property="cardCVVField" destination="UpW-R7-7eL" id="L33-z7-duq"/>
+                <outlet property="cardExpiryField" destination="EE9-XG-eWb" id="326-nj-MZT"/>
+                <outlet property="cardNumberField" destination="lU0-sg-9Rt" id="lxa-iF-Mc9"/>
+                <outlet property="expiryWidthConstraint" destination="cFI-0d-BGp" id="PuZ-jF-ehM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="full.png" translatesAutoresizingMaskIntoConstraints="NO" id="H4u-a3-wIJ">
+                    <rect key="frame" x="0.0" y="76" width="320" height="90"/>
+                    <animations/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lU0-sg-9Rt">
+                    <rect key="frame" x="0.0" y="77" width="320" height="42"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="pKY-ji-BEr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UpW-R7-7eL">
+                    <rect key="frame" x="161" y="121" width="159" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Nlw-d9-ZJq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MM / YY" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EE9-XG-eWb">
+                    <rect key="frame" x="0.0" y="121" width="160" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="XfU-3x-DAx"/>
+                        <constraint firstAttribute="width" constant="160" id="cFI-0d-BGp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="UpW-R7-7eL" firstAttribute="leading" secondItem="EE9-XG-eWb" secondAttribute="trailing" constant="1" id="0Fp-HY-BB7"/>
+                <constraint firstItem="lU0-sg-9Rt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="0HK-rR-osr"/>
+                <constraint firstItem="H4u-a3-wIJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1bZ-57-Vma"/>
+                <constraint firstAttribute="trailing" secondItem="lU0-sg-9Rt" secondAttribute="trailing" id="HIi-VR-S2l"/>
+                <constraint firstItem="lU0-sg-9Rt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="X6P-OU-bSR"/>
+                <constraint firstItem="EE9-XG-eWb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="121" id="ddM-Wk-8cV"/>
+                <constraint firstAttribute="trailing" secondItem="UpW-R7-7eL" secondAttribute="trailing" id="eqP-u2-ePR"/>
+                <constraint firstItem="UpW-R7-7eL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="121" id="iSc-nL-Rfq"/>
+                <constraint firstItem="H4u-a3-wIJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="mOW-YB-gft"/>
+                <constraint firstItem="EE9-XG-eWb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pgH-9s-rfa"/>
+                <constraint firstAttribute="trailing" secondItem="H4u-a3-wIJ" secondAttribute="trailing" id="tUZ-c4-AhX"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="full.png" width="320" height="90"/>
+    </resources>
+</document>
